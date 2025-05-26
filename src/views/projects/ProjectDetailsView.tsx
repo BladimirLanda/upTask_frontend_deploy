@@ -52,16 +52,16 @@ function ProjectDetailsView() {
             </p>
 
             {isManager(data.manager, user._id) && (
-                <nav className="my-5 flex gap-3">
+                <nav className="my-5 flex flex-col sm:flex-row gap-3">
                     <button type="button" 
-                    className="px-10 py-3 text-white text-xl cursor-pointer 
+                    className="px-10 py-3 text-white text-xl cursor-pointer text-center 
                     bg-purple-400 hover:bg-purple-500 transition-colors"
                     onClick={() => navigate('?newTask=true')}> {/*Forma Abreviada*/}
                         Agregar Tarea
                     </button>
 
                     <Link to={'team'} className="px-10 py-3 text-white text-xl cursor-pointer 
-                    bg-fuchsia-600 hover:bg-fuchsia-700 transition-colors">
+                    text-center bg-fuchsia-600 hover:bg-fuchsia-700 transition-colors">
                         Colaboradores
                     </Link>
                 </nav>

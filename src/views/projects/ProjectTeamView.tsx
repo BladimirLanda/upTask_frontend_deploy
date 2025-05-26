@@ -53,16 +53,16 @@ function ProjectTeamView() {
             Administra el equipo de trabajo para el proyecto
         </p>
 
-        <nav className="my-5 flex gap-3">
+        <nav className="my-5 flex flex-col sm:flex-row gap-3">
             <button type="button" 
-            className="px-10 py-3 text-white text-xl cursor-pointer 
+            className="px-10 py-3 text-white text-xl cursor-pointer text-center 
             bg-purple-400 hover:bg-purple-500 transition-colors"
             onClick={() => navigate('?addMember=true')}>
                 Agregar Colaborador
             </button>
 
             <Link to={`/projects/${projectId}`} className="px-10 py-3 text-white text-xl cursor-pointer 
-            bg-fuchsia-600 hover:bg-fuchsia-700 transition-colors">
+            text-center bg-fuchsia-600 hover:bg-fuchsia-700 transition-colors">
                 Volver a Proyecto
             </Link>
         </nav>

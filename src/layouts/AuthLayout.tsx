@@ -9,12 +9,13 @@ function AuthLayout() {
     return (
         <>
             <div className="min-h-screen bg-gray-800">
-                <div className="w-[450px] py-10 mx-auto lg:py-20 ">
+                <div className="w-full max-w-[450px] py-10 mx-auto px-4 lg:py-20">
                     <Logo />
 
                     <div className="mt-10">
 
                         <Outlet />
+                        
                     </div>
                 </div>
             </div>
